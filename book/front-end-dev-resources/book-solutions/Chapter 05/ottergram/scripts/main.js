@@ -33,6 +33,7 @@ function addThumbClickHandler(thumb) {
     event.preventDefault();
     // More code to follow.
     setDetailsFromThumb(thumb);
+    showDetails();
   });
 }
 
@@ -46,6 +47,10 @@ function getThumbnailsArray() {
 function hideDetails(){
   'use strict';
   document.body.classList.add(HIDDEN_DETAIL_CLASS);
+}
+function showDetails(){
+  'use strict';
+  document.body.classList.remove(HIDDEN_DETAIL_CLASS);
 }
 
 function addKeyPressHandler(){
