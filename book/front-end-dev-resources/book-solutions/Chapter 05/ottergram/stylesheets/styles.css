@@ -69,7 +69,7 @@ body {
   max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
-  transition: transform 133ms;
+  transition: transform 133ms ease-in-out;
 }
 
 .thumbnail-item:hover{
@@ -101,6 +101,11 @@ body {
 .detail-image-frame {
   position: relative;
   text-align: center;
+  transition: transform 333ms;
+}
+.is-tiny {
+  transform: scale(0.001);
+  transition: transform 0ms;
 }
 
 .detail-image {
