@@ -50,7 +50,7 @@ function hideDetails(){
 
 function addKeyPressHandler(){
   'use strict';
-  document.body.addEventListener('keyup', function (event)){
+  document.body.addEventListener('keyup', function (event){
     event.preventDefault();
     console.log(event.keyCode);
   }
