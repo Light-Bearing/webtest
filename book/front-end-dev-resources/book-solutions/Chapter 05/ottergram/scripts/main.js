@@ -53,7 +53,7 @@ function addKeyPressHandler(){
   document.body.addEventListener('keyup', function (event){
     event.preventDefault();
     console.log(event.keyCode);
-  }
+  });
 }
 
 function initializeEvents() {
